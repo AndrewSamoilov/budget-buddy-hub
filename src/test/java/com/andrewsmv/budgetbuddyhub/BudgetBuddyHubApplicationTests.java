@@ -1,10 +1,10 @@
 package com.andrewsmv.budgetbuddyhub;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-@WebMvcTest
+@ExtendWith(MockitoExtension.class)
 class BudgetBuddyHubApplicationTests {
 
     @Test
