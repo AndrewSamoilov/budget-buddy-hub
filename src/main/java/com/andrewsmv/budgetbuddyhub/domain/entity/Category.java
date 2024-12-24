@@ -4,16 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.util.Collections;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Purchase {
+public class Category {
     private Long id;
-    private BigDecimal amount;
+    private String name;
     private String description;
-    private LocalDate date;
-    private Category category;
+    private boolean isParent;
+    private List<Category> children = Collections.emptyList();
 }
