@@ -1,4 +1,4 @@
-CREATE TABLE budget.category
+CREATE TABLE budget.purchase
 (
     id          BIGSERIAL PRIMARY KEY,
     amount      double precision NOT NULL,
