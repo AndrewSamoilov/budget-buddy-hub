@@ -1,0 +1,1 @@
+CREATE SCHEMA budget_app;
