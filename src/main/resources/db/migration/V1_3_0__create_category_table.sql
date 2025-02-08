@@ -1,4 +1,4 @@
-CREATE TABLE budget.category
+CREATE TABLE budget-app.category
 (
     id          BIGSERIAL PRIMARY KEY,
     name        VARCHAR(255) NOT NULL,

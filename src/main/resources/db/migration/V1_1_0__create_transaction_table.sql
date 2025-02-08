@@ -1,4 +1,4 @@
-CREATE TABLE budget.purchase
+CREATE TABLE budget-app.transaction
 (
     id          BIGSERIAL PRIMARY KEY,
     amount      double precision NOT NULL,

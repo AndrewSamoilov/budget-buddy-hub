@@ -1,4 +1,4 @@
-CREATE TABLE budget.user
+CREATE TABLE budget-app.user
 (
     id       BIGSERIAL PRIMARY KEY,
     email    VARCHAR(255) UNIQUE NOT NULL,
