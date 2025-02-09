@@ -15,6 +15,7 @@ public class TransactionAdapter extends MappingSqlQuery<TransactionModel> implem
 
     @Override
     public TransactionModel create(TransactionModel transaction) {
+
         return null;
     }
 
