@@ -24,7 +24,7 @@ public class TransactionAdapter extends MappingSqlQuery<TransactionModel> implem
     }
 
     @Override
-    protected TransactionModel mapRow(ResultSet rs, int rowNum) throws SQLException {
-        return null;
+    protected TransactionModel mapRow(ResultSet rs, int rowNum) {
+//        return ne;
     }
 }
