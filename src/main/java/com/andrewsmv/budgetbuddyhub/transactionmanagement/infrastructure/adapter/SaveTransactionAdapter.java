@@ -2,30 +2,20 @@ package com.andrewsmv.budgetbuddyhub.transactionmanagement.infrastructure.adapte
 
 import com.andrewsmv.budgetbuddyhub.transactionmanagement.application.internal.outport.TransactionOutPort;
 import com.andrewsmv.budgetbuddyhub.transactionmanagement.model.TransactionModel;
-import org.springframework.jdbc.object.MappingSqlQuery;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import javax.sql.DataSource;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
+@Slf4j
 @Component
-public class TransactionAdapter extends MappingSqlQuery<TransactionModel> implements TransactionOutPort {
+@RequiredArgsConstructor
+public class SaveTransactionAdapter implements TransactionOutPort {
 
+//    private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Override
     public TransactionModel create(TransactionModel transaction) {
-
+//        namedParameterJdbcTemplate.query("");
         return null;
-    }
-
-
-    public TransactionAdapter(DataSource ds) {
-        super(ds, "SELECT ");
-    }
-
-    @Override
-    protected TransactionModel mapRow(ResultSet rs, int rowNum) {
-//        return ne;
     }
 }
